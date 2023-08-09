@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Borel&family=Cinzel:wght@400;500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&family=Roboto&display=swap" rel="stylesheet">  
+   <style> 
+      p {
+       font-size: 15px;
+       font-weight: 500;
+      }
+      header {
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       background-color: #f0f0f0;
+       padding: 20px;
+       height: 60px; 
+       }
+        .cabezal {
+          display: flex;
+          align-items: center;
+          flex-grow: 1; /* Ocupar espacio restante en la fila */
+         }
+         .logocabezalrow {
+            margin-right: 40px;
+          }
+          .divmenutext {
+            display: flex;
+            align-items: center;
+            font-size: 18px;
+            font-family: borel;
+            flex-grow: 1; /* Ocupar espacio restante en la fila */
+            }
+           .menutext1,
+           .menutext2,
+           .menutext3 {
+              margin-right: 25px;
+            }
+           .menutext4 {
+             margin-left: auto;
+            }
+      body {
+       font-family: Quicksand;
+       background-color: #f8f8f8;
+       }
+       .jumbotron {
+         display: flex;
+         background-color: #f8f8f8;
+         padding: 10px;
+         padding-right: 0px;
+         height: 700px;
+         }
+         .izqjumbo {
+           flex: 1;
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+           align-items:normal;
+           padding-left: 10px;
+           }
+         /* Estilos para la sección derecha del jumbotron */
+         .derjumbo {
+           flex: 1;
+           display: flex;
+           justify-content: end;
+           align-items: center;
+           }
+           .titlejumbotext {
+            font-family: Cinzel;
+            display: inline-block;
+            font-size: 50px;
+            font-weight: 800;
+            margin-left: 80px;
+            margin-block-end: 5px;
+            }
+            form {
+              display: inline-block;
+              margin-left: 80px;
+              height: 30px;
+              }
+              button {
+                font-family: Quicksand;
+                font-weight: 600;
+                background-color: rgb(241, 238, 231);
+                color: #333;
+                border: none;
+                height: 40px;
+                width: 150px;
+                border-radius: 8px ;
+                cursor: pointer;
+                margin-left: 10px;
+              }
+              .emailform {
+                font-family: Quicksand;
+                background-color: #ffffff;
+                border: none;
+                height: 40px;
+                width: 240px;
+                border-radius: 8px;
+              }
+           .jumbosubtext {
+              display: inline-block;
+              font-family: Cinzel;
+              font-size: 36px;
+              font-weight: 800;
+              margin-left: 80px;
+              margin-top: 20px;
+              padding-left: 50p;
+              line-height: 60px;
+           }
+              /* Estilos para la imagen en la sección derecha del jumbotron */
+          .imgderjumbo {
+            height: 100%; /* Altura del 100% del alto de la ventana */
+            width: 100%; /* Ancho del 100% del contenedor */
+            max-height: 100%; /* Ajustar la imagen sin distorsionarla */
+            object-fit: cover; /* Mantener la relación de aspecto */
+            }
+         
+       .presentacion {
+         display: block;
+         background-color: #fff;
+         padding: 20px;
+         text-align: center;
+         }
+         h2 {
+           font-size: 33px;
+          }
+         .textopresentacion {
+           font-size: 28px;
+          }
+       .product-container {
+          background-color: aliceblue;
+          display: flex;
+          flex-direction:row;
+          align-items: center;
+          justify-content: space-between;
+          /* border-style: solid; */
+          /* border-color: #333; */
+          padding-right: 80px;
+          padding-left: 80px;
+          padding-top: 80px;
+          }
+          .product {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* border-style: solid; */
+            /* border-color: #a3d705; */
+          }
+           .productimg {
+              display: flex ;
+              width: 400px;
+              height: 400px;
+              object-fit:cover;
+              object-position: center;
+              /* border-style: solid; */
+              /* border-color: #f91105; */
+          }
+          .productext {
+            height: 100px;
+            width: 400px;
+           /* border-style: solid; */
+           /* border-color: #2296fb; */
+          }
+        footer {  
+          display: block;
+          background-color: #f0f0f0;
+          padding: 20px;
+          text-align: left;
+          width: 100%; /* Ocupar todo el ancho disponible */
+          left: 0; /* Asegurarse de que comience desde la izquierda */
+         }
+         footertext {
+          font-size: 30px;
+        }
+     /* Media query para pantallas de hasta 768px */
+     @media (max-width: 768px) {
+            .jumbotron {
+             flex-direction: column;
+             height: auto;
+             }
+
+             .izqjumbo {
+               margin-top: 20px;
+               display: flex;
+               align-items: center;
+             }
+
+             .derjumbo {
+               margin: 20px 0;
+             }
+             .formjumbo {
+              align-items: center;
+             }
+             .emailform,
+              button {
+                width: 100%;
+                margin-left: 0;
+              }
+
+             .jumbosubtext {
+                margin-left: 0;
+                text-align: center;
+                align-items: center;
+              }
+               /* Ajustar tamaño de fuente y margen para menú en pantallas más pequeñas */
+            .divmenutext {
+             font-size: 14px;
+              margin-right: 15px;
+            
+            }
+              /* Ajustar margen derecho de menú de INICIAR SESION en pantallas pequeñas */
+            .menutext4 {
+             margin-left: auto;
+             align-items: end;
+             }
+            .presentacion {
+              flex-direction: column;
+              height: auto;
+            }
+          
+            }
+    </style>
+  </head>
+<body>
+  <header>
+    <div class="cabezal">
+      <div class="logocabezalrow">
+        <img class="logocabezal" src="/DESARROLLO Proyecto 1/imagenes proyecto 1/mmm_logo_head.png">
+      </div>
+      <div class="divmenutext">
+        <span class="menutext1"> Galería</span>
+        <span class="menutext2">¿Quiénes somos?</span>
+        <span class="menutext3"> Contacto</span>
+        <span class="menutext4"> Iniciar Sesion</span>
+      </div>
+      
+    </div>
+  </header>
+  <div class="jumbotron">
+    <div class="izqjumbo">
+    
+      <span class="titlejumbotext"> Articulos <br> </be>Ecológicos <br> para tu Boda</span>
+    
+      <div class="formjumbo">
+       <form>
+        <input class="emailform" type="email" placeholder="Correo eletronico" required>
+        <button type="submit">¡Recibir Catálogo!</button>
+       </form>
+       </div>
+       <span class="jumbosubtext">En Armonía con <br> la Naturaleza </span>
+    </div>
+    <div class="derjumbo">
+      <img class="imgderjumbo" src="imagenes proyecto 1/DET_CORAZON_4.jpg" width="300px">
+    </div>
+  </div>
+
+  <div class="presentacion">
+    <h2>¡Nuestros Papeles contienen Semillas!</h2>
+    <span class="textopresentacion">En Manos del Marga Marga nos especializamos en crear Papel Reciclado ¡y Plantable! <br>  ¡Los fabricamos de manera artesanal y ayudamos al medio ambiente!</span>
+  </div>
+
+  <div class="product-container">
+     <div class="product">
+       <img class=productimg src="/DESARROLLO Proyecto 1/imagenes proyecto 1/Mariposa Verde.jpg" alt="Producto 1">
+     </div>
+     <div class="product">
+       <img class=productimg  src="/DESARROLLO Proyecto 1/imagenes proyecto 1/Mont_foto_AmKrf_4_28062023-03.jpg" alt="Producto 2">
+     </div>
+       <div class="product">
+       <img class=productimg  src="/DESARROLLO Proyecto 1/imagenes proyecto 1/Tarjetilla mariposa2.jpg" alt="Producto 3">  
+     </div>
+  </div>
+  <div class="product-container">
+    <div class="productext"> textodiv
+    </div>
+    <div class="productext"> textodiv
+    </div>
+      <div class="productext">textodiv
+    </div>
+ </div>
+  
+  <footer> 
+   <p>Contáctanos:</p>
+   <p>Whatsapp: +5692121504</p>
+   <p>Correo electrónico: info@producciondebodas.com</p>
+   <p>Todos los derechos reservados © 2023 Producción de Bodas</p>
+  </footer>
+</body>
+</html>
