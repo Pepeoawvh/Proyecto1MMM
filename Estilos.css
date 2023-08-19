@@ -1,0 +1,300 @@
+p {
+    font-size: 15px;
+    font-weight: 500;
+   }
+   body {
+
+    font-family: Quicksand;
+    background-color: #f8f8f8;
+
+    }
+   header {
+     /* background-color: aquamarine; */
+    }
+     .cabezal {
+       display: grid;
+       grid-template-columns: 0.5fr 1fr 1fr;
+       grid-template-rows: 80px;
+       align-items:center;
+       /* border: 2px solid rgb(79, 185, 227); */
+       column-gap: 10px;
+      }
+      .logocabezalrow img {
+       height: 100%;
+       width: 100%;
+       object-fit: cover;
+       margin-right: 40px;
+       /* border: 2px solid rgb(41, 53, 57); */ 
+       }
+       .logocabezal{
+         height: 80%;
+         width: 80%;
+         object-fit: contain;
+       }
+       .divmenutext {
+         display: grid;
+         grid-template-columns: 1fr 2fr 1fr;
+         grid-gap: 20px;
+         justify-items: center;
+         align-items: center;
+         font-family: borel;
+         padding-top: 10px;
+         object-fit: cover;
+         }
+         .iniciarsesion {
+          font-family: borel;
+          /* border: 2px solid rgb(255, 238, 0); */
+          margin-left: auto;
+          margin-right: 40px;
+          padding-top: 10px;
+          object-fit: cover;
+         }
+        .menutext4 {
+         /* border: 2px solid rgb(18, 223, 15); */
+         object-fit: cover;
+         }
+
+         .jumbotron {
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* Dos columnas de igual tamaño */
+            grid-gap: 25px;
+            background-color: #f8f8f8;
+            height: 100%;
+            /* height: fit-content; */
+        }
+        
+        .izqjumbo {
+            display: grid;
+            grid-template-rows: 2fr 0.5fr 2fr;
+            justify-content:center;
+            grid-gap: 10px;
+            margin-top: 30px;
+            object-fit:scale-down;
+            width: 100%;
+            height: 100%;
+            
+        }
+        
+        .titlejumbotext {
+            display: grid;
+            font-family: Cinzel;
+            font-size: 4vw;
+            font-weight: 800;
+            align-items: end;
+        }
+        .formjumbo{
+         display: grid;
+         align-items: center;
+         grid-template-rows: 1fr 0,5fr;
+        }
+        form {
+         display: grid;
+         grid-gap:15px;
+         height: auto;
+         width: auto;
+         align-items: center;
+        }
+        button {
+            font-family: Quicksand;
+            font-weight: 600;
+            background-color: rgb(237, 232, 221);
+            color: #333;
+            border: none;
+            height: 100%;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.7s;
+        }     
+        button:hover {
+            background-color: rgb(236, 210, 152);
+        }
+        button:active {
+            opacity: 0.7;
+        }
+        .emailform {
+            font-family: Quicksand;
+            background-color: #ffffff;
+            border: none;
+            height: 100%;
+            width: auto;
+            border-radius: 8px;
+            align-self: center;
+        }
+        .jumbosubtext {
+            display: grid;
+            font-family: Cinzel;
+            font-size: 3vw;
+            font-weight: 800;
+            line-height: 150%;
+            border-color: aquamarine;
+
+        }
+        .derjumbo {
+            display: grid;
+            justify-content: center;
+            justify-items: center;
+            width: 100%;
+            height: auto;
+        }
+        .imgderjumbo {
+            height: 100%;
+            width: 100%;
+            border-top-left-radius: 30px;
+            border-bottom-left-radius: 30px;
+            box-shadow: 10px 10px 10px rgba(40, 40, 40, 0.2);
+            object-fit: cover;
+        }
+    .presentacion {
+      display: block;
+      background-color: #fff;
+      padding: 20px;
+      text-align: center;
+      }
+      h2 {
+        font-size: 3vw;
+       }
+      .textopresentacion {
+        font-size: 2vw;
+       }
+    .product-container {
+      /* background-color: rgb(245, 250, 255); */
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 20px;
+      padding: 20px;
+      place-items: center;    
+      }
+      .product {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         text-align: center;
+         box-shadow: 10px 10px 10px rgba(40, 40, 40, 0.2);
+         border-radius: 30px;
+         }
+         .productimg {
+           width: 100%;
+           max-width: 400px;
+           height: auto;
+           object-fit: cover;
+           object-position: center;
+           border-radius: 30px;
+         }
+         .productext {
+           font-family: Quicksand;
+           max-width: 400px;
+           height: 100%;
+           width: 100%;
+           text-align: center;
+         }
+         .vermas {
+           display: flex;
+           justify-content: center; /* Centrar horizontalmente */
+           align-items: center; /* Centrar verticalmente */
+           height: 100%; /* Ajustar el alto al 100% de la ventana */
+           margin: 50px;
+          }
+          .botonvermas {
+             font-family: Quicksand;
+             font-weight: 600;
+             font-size: 17px;
+             background-color: rgb(241, 238, 231);
+             color: #333;
+             height: 50px;
+             width: 250px;
+             cursor: pointer;
+           }
+         .papelcontainer {
+           display: grid;
+           grid-template-columns: 1fr 1fr;
+           grid-gap: 15px;
+           background-color: #f8f8f8;
+          }
+          .papelimg {
+            display: grid;
+            width: 100%;
+            height: 100%;
+             object-fit: cover;
+             border-top-right-radius: 30px;
+             border-bottom-right-radius: 30px;
+             box-shadow: 10px 10px 10px rgba(40, 40, 40, 0.2);
+             object-fit: cover;
+           }
+           .papelder {
+            display: grid;
+            grid-template-rows: 0,3fr 3fr;
+            align-items: center;
+            justify-items: center;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            padding-right: 80px;
+            padding-left: 80px;
+           }
+          .papelogo {
+            height: 8vw;
+          }
+         .mmmtext {
+           font-size: 1.6vw;
+           color: #333;
+           text-align: center;
+           line-height: 3vw;
+         }
+
+     footer {  
+       font-family: Quicksand;
+       display:grid;
+       grid-template-columns: 1fr 1fr 1fr;
+       background-color: #e1e1e1;
+       padding: 20px;
+       line-height: 2vw;
+     }
+     ul{
+      font-family: Quicksand;
+      height: 60%;
+      width: 80%;
+      line-height: 3vw;
+     }
+     h3{
+      margin: 0%;
+     }
+      .footmenu {
+    
+;
+
+      }
+    .foothelp {
+
+    }
+    .footcontact {
+      display: grid;
+      grid-template-rows: 1fr 0.2fr 1fr;
+      grid-gap: 10px;
+      align-content: center;
+      padding-top: 20.5px;
+    }
+    .rrss {
+      display: grid;
+      grid-template-columns: 0.15fr 0.15fr 0.15fr;
+      justify-items: left;
+      gap: 15px;
+    }
+    .rrssico {
+      display: grid;
+      width: 4vw;
+      height: auto;
+      object-fit: cover;
+
+
+    }
+    .doslogos {
+      display: grid;
+      grid-template-columns: 0.5fr 0.5fr;
+      height: fit-content;
+      width: auto;
+    }
+    .doslogo1 {
+      width: 15vw
+    }
+    .doslogo2 {
+      width: 15vw
+    }
