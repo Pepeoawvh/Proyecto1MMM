@@ -1,4 +1,6 @@
-
+html {
+  margin-top: 20px;
+}
   .cabezal {
     display: grid;
     grid-template-columns: 0.5fr 1fr 1fr;
@@ -252,6 +254,7 @@ body {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 50px;
     padding: 40px;
+    justify-content: space-around;
   }
   .testiside{
     display: grid;
@@ -261,11 +264,11 @@ body {
   .testi{
     display: grid;
     grid-template-columns: 3fr 1fr; 
-    height: 12vw;
+    height: 17vw;
     border-radius: 25px;
     border: 1px solid rgb(224, 224, 224);
     box-shadow: 10px 10px 10px rgba(40, 40, 40, 0.2);
-    padding: 30px;
+    padding: 20px;
     grid-gap: 30px; 
     transition: transform 0.7s;
   }
@@ -276,14 +279,15 @@ body {
     max-width: 12vw;
     max-height: auto;
     align-self: center;
-    border-radius: 80px;
+    border-radius: 90px;
     box-shadow: 5px 5px 5px rgba(40, 40, 40, 0.2);
 
   }
   .testitext{
-    font-size: 1.3vw;
+    font-size: 1.2vw;
     text-align: right;
     align-self: center;
+    overflow: scroll;
     margin: 0px;
   }
 
@@ -308,7 +312,7 @@ body {
       display: grid;
       grid-template-rows: 1fr 0.2fr 1fr;
       grid-gap: 10px;
-      padding-top: 20.5px;
+      padding-top: 1px;
       margin-left: 15px;
       }
      .rrss {
@@ -339,7 +343,7 @@ body {
 
         
 /* Media query para dispositivos móviles */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 720px) {
   .cabezal {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -393,6 +397,7 @@ body {
   .titlejumbotext {
     font-size: 4vw;
     text-align: center; 
+    letter-spacing: 2px;
   }
   .formjumbo {
     grid-template-rows: auto auto; 
@@ -400,6 +405,7 @@ body {
   .jumbosubtext{
     text-align: center;
     font-size: 3vw;
+    letter-spacing: 2px;
   }
   .derjumbo {
     display: grid;
@@ -514,18 +520,26 @@ body {
                 text-align: right;
                 margin-top: 15px;
                 margin-left: 200px;
-              }    
+              }  
+              h5{
+                font-size: 4vw;
+              }
+              .testimoniocontainer {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-gap: 20px;
+                padding: 30px;
+              }
+
+              
   .testi{
     display: grid;
     grid-template-columns: 3fr 1fr; 
-    height: auto;
     border-radius: 25px;
     border: 1px solid rgb(224, 224, 224);
     box-shadow: 10px 10px 10px rgba(40, 40, 40, 0.2);
-    padding: 30px;
-    grid-gap: 30px; 
-    transition: transform 0.7s;
-    align-content: baseline;
+    padding: 10px;
+    grid-gap: 10px;
   }
   .testimage{
     max-width: 12vw;
@@ -538,50 +552,32 @@ body {
     font-size: 1.3vw;
     text-align: right;
     align-self: center;
-    margin: 0px;
-  }
-  .testimoniocontainer {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 50px;
-    padding: 40px;
   }
   .testiside{
     display: grid;
     grid-template-rows: 1fr 1fr;
-    grid-gap: 30px;
+    grid-gap: 20px;
   }
   .testi{
     display: grid;
     grid-template-columns: 3fr 1fr; 
-    height: 12vw;
-    height: 80px;
-    border-radius: 25px;
-    border: 1px solid rgb(224, 224, 224);
-    box-shadow: 10px 10px 10px rgba(40, 40, 40, 0.2);
-    padding: 30px;
-    padding-top: 20px;
-    grid-gap: 30px; 
-    contain: content;
+    height: 140px;
+    align-content: center;
+    padding: 20px;
     }
   .testimage{
-    max-width: 10vw;
-    max-height: auto;
-    align-self: top;
-    border-radius: 80px;
-    box-shadow: 5px 5px 5px rgba(40, 40, 40, 0.2);
-
+    
   }
   .testitext{
-    font-size: 9px;
-    text-align: right;
-    align-self: center;
-    margin: 0px;
+font-size: 8px;
   }
   footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) !important;
+    max-width: 100%;
     font-size: 12px;
     font-weight: 600;
-    padding: 10px;
   }
-
-}
+  .footcontactinfo{
+    overflow-wrap: break-word;
+  }
