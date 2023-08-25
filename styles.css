@@ -9,7 +9,7 @@ body {
     grid-template-columns: 0.5fr 1fr 1fr; /*tres columnas para el navbar*/
     grid-template-rows: 80px; /*una columna de 80px*/
     align-items:center; /*alinear elementos en eje vertical centro*/
-    margin-top: 10px;
+    margin-top: 20px;
     column-gap: 10px;
     }
     .logocabezalrow img {
@@ -24,8 +24,7 @@ body {
       font-family: 'Merriweather', serif;
       font-weight: 500;
       text-align: center;
-      padding-top: 10px;
-      font-size: 1.3vw;
+      font-size: 100%;
       }
       .iniciarsesion {
        font-family: 'Merriweather', serif;
@@ -38,6 +37,7 @@ body {
        }
         .menutext4 {
          object-fit: cover;
+         font-size: 100%;
         }
 /* Estilos contenedor Jumbo */
   .jumbotron {
@@ -283,7 +283,6 @@ body {
     font-size: 1.2vw;
     text-align: right;
     align-self: center;
-    overflow: scroll;
     margin: 0px;
   }
   /* Estilos Footer */
@@ -336,70 +335,66 @@ body {
         }
         .doslogo2 {
           width: 10.5vw
-        }
-
-        
+        } 
 /* Media query para dispositivos móviles */
 @media screen and (max-width: 800px) {
  
   .cabezal {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-
-  .logocabezalrow {
-    margin: 0; 
-  }
-
-  .logocabezal {
-    max-height: 60%;
-    width: auto;
-  }
-  .divmenutext {
-    grid-template-columns: repeat(3, 4 1fr);
-    justify-items: center;
-    padding-top: 10px;
-    font-size: 80%; 
-    text-align: center;
-  }
-  .menutext4 {
-    display: grid;
-    border-radius: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
-    justify-content: center;
-  }
-  .iniciarsesion {
-    display: grid;
-    grid-template-columns: 1fr;
-    margin: 0; 
-    max-width: 80%;
-    text-align: center; 
-    background-color: #ffffff;
-    padding-bottom: 10px;
-    justify-self: center;
-    border-radius: 20px;
-  }
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   }
+    .logocabezalrow {
+     margin: 0; 
+     }
+     .logocabezal {
+       max-height: 60%;
+       width: auto;
+      }
+    .divmenutext {
+     grid-template-columns: repeat(3, 4 1fr);
+     justify-items: center;
+     padding-top: 10px;
+     font-size: 80%; 
+     text-align: center;
+     }
+     .menutext4 {
+     display: grid;
+     border-radius: 5px;
+     padding-left: 10px;
+     padding-right: 10px;
+     justify-content: center;
+    }
+     .iniciarsesion {
+      display: grid;
+      grid-template-columns: 1fr;
+      margin: 0; 
+      max-width: 80%;
+      text-align: center; 
+      background-color: #ffffff;
+      padding-bottom: 10px;
+      justify-self: center;
+      border-radius: 20px;
+     }
   .jumbotron {
     height: 700px;
     grid-template-columns: 1fr; 
     grid-template-rows: 270px 370px;
     grid-gap: 15px; 
     padding: 20px;
-  }
-  .izqjumbo {
-    height: auto;
-    grid-gap: 5px; 
-    margin-top: 15px; 
-  }
-  .titlejumbotext {
-    font-size: 4vw;
-    text-align: center; 
-    letter-spacing: 2px;
-  }
-  .formjumbo {
-    grid-template-rows: auto auto; 
-  }
+   }
+   .izqjumbo {
+     height: auto;
+     grid-gap: 5px; 
+     margin-top: 15px; 
+    }
+     .titlejumbotext {
+       font-size: 4vw;
+       text-align: center; 
+       letter-spacing: 2px;
+    }
+   .formjumbo {
+     grid-template-rows: auto auto; 
+    }
   .jumbosubtext{
     text-align: center;
     margin-top: 10px;
@@ -480,7 +475,7 @@ body {
           cursor: pointer;
           margin-top: 30px;
         }
-        .papelcontainer {
+  .papelcontainer {
           display: grid;
           grid-template-columns: 1fr 1fr;
           grid-gap: 10px;
@@ -494,7 +489,7 @@ body {
            object-fit: cover;
            border-top-right-radius: 30px;
            border-bottom-right-radius: 30px;
-           box-shadow: 10px 10px 10px rgba(40, 40, 40, 0.2);
+           box-shadow: 10px 10px 10px rgba(156, 63, 63, 0.2);
            object-position: center;
           }
           .papelder {
@@ -521,18 +516,18 @@ body {
                 text-align: right;
                 margin-top: 15px;
                 margin-left: 100px;
-              }  
-              h5{
-                font-size: 5vw;
-              }
-              .testimoniocontainer {
-                display: grid;
+               }  
+
+   .testimoniocontainer {
+      display: grid;
                 grid-template-columns: 1fr;
                 grid-template-rows: 1fr 1fr;
                 grid-gap: 10px;
                 padding: 20px;
               }
-              
+              h5{
+                font-size: 5vw;
+                     }
   .testi{
     display: grid;
     grid-template-columns: 3fr 1fr; 
@@ -558,6 +553,7 @@ body {
   ul {
     list-style-type: none;
     justify-self: center;
+    margin-right: 10px;
   }
   footer {
     display: grid;
@@ -570,14 +566,14 @@ body {
     font-size: 15px;
     font-weight: 600;
   }
-  .footmenu{
+  .footmenu {
     display: grid;
     justify-content: center;
     justify-items: center;
-
+    margin-right: 10px;
   }
-  .footcontactinfo{
-    overflow-wrap: break-word;
+  .foothelp{
+    margin-right: 20px;
   }
   .footcontact {
     display: grid;
