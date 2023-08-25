@@ -385,12 +385,12 @@ body {
   .jumbotron {
     height: 700px;
     grid-template-columns: 1fr; 
-    grid-template-rows: 300px 370px;
+    grid-template-rows: 270px 370px;
     grid-gap: 15px; 
     padding: 20px;
   }
   .izqjumbo {
-    height: 300px;
+    height: auto;
     grid-gap: 5px; 
     margin-top: 15px; 
   }
@@ -404,8 +404,10 @@ body {
   }
   .jumbosubtext{
     text-align: center;
-    font-size: 3vw;
+    margin-top: 10px;
+    font-size: 3.5vw;
     letter-spacing: 2px;
+    line-height: 5vw;
   }
   .derjumbo {
     display: grid;
@@ -420,6 +422,7 @@ body {
     background-color: #fff;
     padding: 20px;
     text-align: center;
+    font-size: 12px;
     }
     h2 {
       font-size: 4vw;
@@ -497,7 +500,7 @@ body {
           }
           .papelder {
            display: grid;
-           grid-template-rows: 0,3fr 3fr;
+           grid-template-rows: 0.5fr 2fr;
            align-items: center;
            justify-items: center;
            padding-top: 30px;
@@ -506,20 +509,19 @@ body {
            padding-left: 40px;
            }
             .papelogo {
-              height: 8vw;
+              height: vw;
             }
             .mmmtext {
-              font-size: 2vw;
+              font-size: 3vw;
               color: #333;
               text-align: center;
-              line-height: 3vw;
+              line-height: 4vw;
               margin: 0px;
               }
               .firmaliz {
-                width: auto;
                 text-align: right;
                 margin-top: 15px;
-                margin-left: 200px;
+                margin-left: 100px;
               }  
               h5{
                 font-size: 4vw;
@@ -530,12 +532,12 @@ body {
                 grid-gap: 20px;
                 padding: 30px;
               }
-
               
   .testi{
     display: grid;
     grid-template-columns: 3fr 1fr; 
     border-radius: 25px;
+    height: 150px;
     border: 1px solid rgb(224, 224, 224);
     box-shadow: 10px 10px 10px rgba(40, 40, 40, 0.2);
     padding: 10px;
@@ -549,35 +551,69 @@ body {
     box-shadow: 5px 5px 5px rgba(40, 40, 40, 0.2);
   }
   .testitext{
-    font-size: 1.3vw;
     text-align: right;
     align-self: center;
+    font-size: 10px;
   }
-  .testiside{
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-gap: 20px;
-  }
-  .testi{
-    display: grid;
-    grid-template-columns: 3fr 1fr; 
-    height: 140px;
-    align-content: center;
-    padding: 20px;
-    }
-  .testimage{
-    
-  }
-  .testitext{
-font-size: 8px;
+  ul {
+    list-style-type: none;
   }
   footer {
     display: grid;
-    grid-template-columns: repeat(3, 1fr) !important;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.7fr 0.7fr 0.7fr;
+    row-gap: 10px;
+    justify-items: center;
     max-width: 100%;
-    font-size: 12px;
+    text-align: center;
+    font-size: 15px;
     font-weight: 600;
+  }
+  .footmenu{
+    display: grid;
+    height: auto;
+    justify-content: center;
+    justify-items: center;
+
   }
   .footcontactinfo{
     overflow-wrap: break-word;
   }
+  .footcontact {
+    display: grid;
+    grid-template-rows: 1fr 0.5fr 1fr;
+    grid-gap: 10px;
+    font-size: 15px;
+    padding-top: 0px;
+    margin-left: 18px;
+    }
+    h6{
+      font-size: larger;
+    }
+   .rrss {
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     justify-content:center;
+     justify-items:center;
+     gap: 15px;
+     }
+     .rrssico {
+       display: grid;
+       width: 8vw;
+       height: auto;
+       object-fit: cover;
+     }
+    .doslogos {
+      display: grid;
+      grid-template-columns: 0.5fr 0.5fr;
+      grid-template-rows: 1fr;
+      height: auto;
+      width: auto;
+      gap: 15px;
+     }
+      .doslogo1 {
+        width: 35vw;
+      }
+      .doslogo2 {
+        width: 27vw;
+      }
