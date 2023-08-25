@@ -343,7 +343,7 @@ body {
 
         
 /* Media query para dispositivos móviles */
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 800px) {
   .cabezal {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
