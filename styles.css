@@ -5,7 +5,7 @@ body {
  }
  a {
   color: #333;
-  text-decoration: none; /* Para eliminar el subrayado por defecto */
+  text-decoration: none; /* Para eliminar el subrayado por defecto de los enlaces */
 }
 
 /* Estilos para los enlaces cuando se coloca el mouse encima */
