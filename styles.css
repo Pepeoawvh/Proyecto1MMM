@@ -3,13 +3,22 @@ body {
   font-family: Quicksand;
   background-color: #f8f8f8;
  }
+ a {
+  color: #333;
+  text-decoration: none; /* Para eliminar el subrayado por defecto */
+}
+
+/* Estilos para los enlaces cuando se coloca el mouse encima */
+a:hover {
+  cursor: pointer;
+}
   /* Estilos para header */
   .cabezal {
    display: grid;
    grid-template-columns: 0.5fr 1fr 1fr; /*tres columnas para el navbar*/
    grid-template-rows: 80px; /*una columna de 80px*/
    align-items:center; /*alinear elementos en eje vertical centro*/
-   margin-top: 20px;
+   /* margin-top: 20px; */
    column-gap: 10px;
    }
    .logocabezalrow img {

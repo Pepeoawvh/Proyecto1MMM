@@ -1,4 +1,4 @@
-# PROYECTO 1: Landing de Negocio MANOS DEL MARGA-MARGA ![Logo](./public/assets/img/mmmlogoheadw.png)
+# PROYECTO1: Landing de Negocio MANOS DEL MARGA-MARGA ![Logo](./public/assets/img/mmmlogoheadw.png)
 
 ## **ÍNDICE**
 
