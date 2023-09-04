@@ -23,10 +23,8 @@ a:hover {
    #botonmenu {
     display: none;
    }
-   .logocabezalrow img {
-     height: 100%;
-     width: 100%;
-     margin-right: 40px; 
+   .logocabezal {
+    height: 90%; 
      }
    .divmenutext {
      display: grid;
@@ -350,21 +348,23 @@ a:hover {
 @media screen and (max-width: 800px) {
   
 .cabezal {
-  display: grid;
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
   height: 100%;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 0.8fr 1fr;
   row-gap: 5px;
   background-color: #fff;
   padding: 10px;
 }
-.logocabezalrow img {
-  height: 65px;
-  width: 205px;
+.logocabezal {
+  display: flex;
+  height: 70px;
+  border-right: 0px;
   margin-right: 0px;
+  right: 100%;
 }
-.logocabezalrow {
-  justify-self: right;
-}
+
 #botonmenu {
   display:flex;
   cursor: pointer;
@@ -392,20 +392,16 @@ body:not(:focus-within) .menutext4  {
      border-radius: 5px;
      padding-left: 10px;
      padding-right: 10px;
-     justify-content: right;
+    justify-self: center;
      font-size: 2fr;
     }
      .iniciarsesion {
-      display: grid;
+      display: flex;
       margin: 0px;
-      max-width: 80%;
-      text-align: center; 
       color: #333;
-      background-color: #e3e3e3;
+      background-color: #eeeeee;
       padding-bottom: 10px;
-      justify-self: center;
       border-radius: 20px;
-      justify-self: right;
      }
   .jumbotron {
     height: 700px;
